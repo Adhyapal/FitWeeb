@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fitness & Diet Plan</title>
+  <link rel="stylesheet" href="global.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">FitPlan</a>
+      <nav class="main-nav">
+        <a href="#plans">Plans</a>
+        <a href="#diet">Diet</a>
+        <a href="#workouts">Workouts</a>
+        <a href="#track">Track</a>
+      </nav>
+      <a class="cta" href="#plans">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Simple, sustainable fitness & diet plans that work.</h1>
+          <p>Create a balanced routine, follow a smart meal plan, and track progress — all in one page.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#plans">Choose a Plan</a>
+            <a class="btn-outline" href="#track">Start Tracking</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="stats">
+            <div>
+              <strong>4</strong>
+              <span>Weeks</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>Meals / day</span>
+            </div>
+            <div>
+              <strong>5</strong>
+              <span>Workouts / week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="container plans">
+      <h2>Plans</h2>
+      <p class="lead">Pick a plan based on your goal — each plan includes workout split and meal guidance.</p>
+      <div class="plan-grid">
+        <article class="plan card">
+          <h3>Fat Loss</h3>
+          <p>Calorie deficit, high-protein meals, and metabolic conditioning.</p>
+          <ul>
+            <li>3 strength sessions/week</li>
+            <li>2 HIIT sessions/week</li>
+            <li>Daily step goal: 8k</li>
+          </ul>
+          <a class="btn-secondary" href="#diet">View Diet</a>
+        </article>
+
+        <article class="plan card">
+          <h3>Muscle Gain</h3>
+          <p>Progressive overload, calorie surplus, and protein-focused meals.</p>
+          <ul>
+            <li>4 strength sessions/week</li>
+            <li>Moderate cardio</li>
+            <li>Daily protein target</li>
+          </ul>
+          <a class="btn-secondary" href="#diet">View Diet</a>
+        </article>
+
+        <article class="plan card">
+          <h3>Wellness</h3>
+          <p>Balanced approach with mobility, light strength, and sustainable eating.</p>
+          <ul>
+            <li>3 full-body sessions/week</li>
+            <li>Yoga/mobility focus</li>
+            <li>Flexible macros</li>
+          </ul>
+          <a class="btn-secondary" href="#diet">View Diet</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="diet" class="container diet">
+      <h2>Sample Diet (Fat Loss)</h2>
+      <p class="lead">A simple approachable daily meal plan (adjust portions to match your targets).</p>
+      <div class="diet-grid">
+        <div class="card meal">
+          <h4>Breakfast</h4>
+          <p>Oat porridge with milk, protein, berries, nuts.</p>
+          <small>Calories ~ 450 | Protein ~ 30g</small>
+        </div>
+        <div class="card meal">
+          <h4>Lunch</h4>
+          <p>Grilled chicken salad, quinoa, greens, olive oil dressing.</p>
+          <small>Calories ~ 550 | Protein ~ 40g</small>
+        </div>
+        <div class="card meal">
+          <h4>Dinner</h4>
+          <p>Baked salmon, sweet potato, broccoli.</p>
+          <small>Calories ~ 600 | Protein ~ 45g</small>
+        </div>
+        <div class="card meal">
+          <h4>Snacks</h4>
+          <p>Greek yogurt or protein shake, fruit, almonds.</p>
+          <small>Calories ~ 200 | Protein ~ 15g</small>
+        </div>
+      </div>
+      <p class="note">Tip: drink water, adjust portion sizes.</p>
+    </section>
+
+    <section id="workouts" class="container workouts">
+      <h2>Weekly Workout Example</h2>
+      <div class="workout-list card">
+        <ol>
+          <li><strong>Mon — Upper Strength</strong></li>
+          <li><strong>Tue — HIIT / Conditioning</strong></li>
+          <li><strong>Wed — Lower Strength</strong></li>
+          <li><strong>Thu — Active Recovery</strong></li>
+          <li><strong>Fri — Full Body</strong></li>
+          <li><strong>Sat — Cardio / Optional</strong></li>
+          <li><strong>Sun — Rest</strong></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="track" class="container track">
+      <h2>Track Progress</h2>
+      <p class="lead">Use a simple tracker to log weight, measurements and workouts.</p>
+      <div class="tracker-grid">
+        <div class="tracker card">
+          <h4>Weekly Check</h4>
+          <ul>
+            <li>Weigh-in</li>
+            <li>Photos</li>
+            <li>Energy & mood notes</li>
+          </ul>
+        </div>
+        <div class="tracker card">
+          <h4>Workout Log</h4>
+          <p>Record sets, reps, weights.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> FitPlan</p>
+      <nav>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
