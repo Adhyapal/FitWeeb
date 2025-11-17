@@ -1,5 +1,5 @@
 :root {
-  --bg: linear-gradient(135deg, #eef2ff, #f8fafc);
+  --bg: linear-gradient(135deg, #ff9ecb, #ff7ab8, #c084fc);
   --card: #ffffff;
   --muted: #6b7280;
   --accent: #10b981;
@@ -13,12 +13,15 @@
 * {
   box-sizing: border-box;
 }
+
+/* Background Gradient Updated */
 body {
   margin: 0;
   font-family: var(--ff);
   background: var(--bg);
   color: #111827;
 }
+
 .container {
   max-width: var(--max-width);
   margin: auto;
@@ -34,24 +37,28 @@ body {
   z-index: 10;
   background: linear-gradient(90deg, rgba(255,255,255,0.7), rgba(240,249,255,0.7));
 }
+
 .header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   text-decoration: none;
   font-size: 1.3rem;
   color: var(--accent-2);
   font-weight: 700;
 }
+
 .main-nav a {
   margin: 0 0.5rem;
   color: var(--muted);
   text-decoration: none;
 }
+
 .cta {
-  background: linear-gradient(135deg, #34d399, #10b981);
+  background: linear-gradient(135deg, #10b981, #059669);
   padding: 0.5rem 1rem;
   border-radius: 10px;
   color: white;
@@ -63,12 +70,14 @@ body {
 .hero {
   padding: 3rem 0;
 }
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 320px;
   gap: 2rem;
   align-items: center;
 }
+
 .hero-copy h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -76,17 +85,20 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
+
 .lead {
   color: var(--muted);
 }
+
 .btn-primary {
-  background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
   color: white;
   padding: 0.6rem 1rem;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
 }
+
 .btn-outline {
   border: 2px solid #e6eef6;
   padding: 0.5rem 0.9rem;
@@ -97,16 +109,17 @@ body {
 
 /* Cards */
 .card {
-  background: var(--card);
+  background: linear-gradient(135deg, #ffffff, #f0f9ff);
   padding: 1rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  background: linear-gradient(135deg, #ffffff, #f1f5f9);
 }
+
 .stats {
   display: flex;
   justify-content: space-between;
 }
+
 .stats strong {
   font-size: 1.25rem;
 }
@@ -117,6 +130,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
+
 .btn-secondary {
   background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
   padding: 0.5rem 1rem;
@@ -132,6 +146,7 @@ body {
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .note {
   color: var(--muted);
   font-size: 0.9rem;
@@ -158,6 +173,7 @@ body {
   margin-top: 2rem;
   background: linear-gradient(90deg, #fafafa, #f0f9ff);
 }
+
 .footer-inner {
   display: flex;
   justify-content: space-between;
@@ -191,6 +207,7 @@ body {
     font-size: 1.5rem;
   }
 }
+
 /* Hero Image Fix */
 .hero-image img {
   width: 100%;
@@ -204,24 +221,6 @@ body {
 .hero-card {
   grid-column: span 2;
   margin-top: 1rem;
-}
-
-/* Stronger Page Gradient */
-body {
-  background: linear-gradient(135deg, #dbeafe, #f0f9ff, #f8fafc);
-}
-
-/* Card Gradient Enhancement */
-.card {
-  background: linear-gradient(135deg, #ffffff, #f0f9ff);
-}
-
-/* Buttons More Vibrant */
-.btn-primary {
-  background: linear-gradient(135deg, #2563eb, #0ea5e9);
-}
-.cta {
-  background: linear-gradient(135deg, #10b981, #059669);
 }
 
 /* Better Responsive Scaling */
