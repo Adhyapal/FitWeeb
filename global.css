@@ -1,5 +1,5 @@
 :root {
-  --bg: #f6f7fb;
+  --bg: linear-gradient(135deg, #eef2ff, #f8fafc);
   --card: #ffffff;
   --muted: #6b7280;
   --accent: #10b981;
@@ -16,7 +16,7 @@
 body {
   margin: 0;
   font-family: var(--ff);
-  background: linear-gradient(#f8fafc, var(--bg));
+  background: var(--bg);
   color: #111827;
 }
 .container {
@@ -32,6 +32,7 @@ body {
   backdrop-filter: blur(6px);
   padding: 1rem 0;
   z-index: 10;
+  background: linear-gradient(90deg, rgba(255,255,255,0.7), rgba(240,249,255,0.7));
 }
 .header-inner {
   display: flex;
@@ -50,7 +51,7 @@ body {
   text-decoration: none;
 }
 .cta {
-  background: var(--accent);
+  background: linear-gradient(135deg, #34d399, #10b981);
   padding: 0.5rem 1rem;
   border-radius: 10px;
   color: white;
@@ -71,12 +72,15 @@ body {
 .hero-copy h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .lead {
   color: var(--muted);
 }
 .btn-primary {
-  background: var(--accent-2);
+  background: linear-gradient(135deg, #3b82f6, #0ea5e9);
   color: white;
   padding: 0.6rem 1rem;
   border-radius: 10px;
@@ -97,6 +101,7 @@ body {
   padding: 1rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
 }
 .stats {
   display: flex;
@@ -113,7 +118,7 @@ body {
   gap: 1rem;
 }
 .btn-secondary {
-  background: #f3f4f6;
+  background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
   padding: 0.5rem 1rem;
   border-radius: 8px;
   text-decoration: none;
@@ -151,6 +156,7 @@ body {
   border-top: 1px solid #e6e9ef;
   padding: 1rem 0;
   margin-top: 2rem;
+  background: linear-gradient(90deg, #fafafa, #f0f9ff);
 }
 .footer-inner {
   display: flex;
